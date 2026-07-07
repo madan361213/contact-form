@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f7fa;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#0b6b69;
+    color:white;
+    padding:15px 8%;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+header h2{
+    font-size:30px;
+}
+
+nav{
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ffd43b;
+}
+
+.hero{
+    height:250px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    background:linear-gradient(135deg,#0b6b69,#1db9a5);
+}
+
+.hero h1{
+    font-size:42px;
+}
+
+.hero p{
+    margin-top:10px;
+    font-size:20px;
+}
+
+.container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+    padding:40px 8%;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    padding:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h2{
+    text-align:center;
+    color:#0b6b69;
+    margin-bottom:20px;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+}
+
+form input,
+form textarea{
+
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+}
+
+textarea{
+    resize:none;
+    height:120px;
+}
+
+form button{
+
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#0b6b69;
+    color:white;
+    cursor:pointer;
+    font-size:18px;
+    transition:.3s;
+
+}
+
+form button:hover{
+
+    background:#095654;
+
+}
+
+#formMessage{
+
+    margin-top:15px;
+    font-weight:bold;
+    text-align:center;
+
+}
+
+.gallery{
+
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:10px;
+
+}
+
+.gallery img{
+
+width:100%;
+height:160px;
+object-fit:cover;
+border-radius:10px;
+transition:.4s;
+
+}
+
+.gallery img:hover{
+
+transform:scale(1.05);
+
+}
+
+.gallery-buttons{
+
+margin-top:20px;
+display:flex;
+gap:10px;
+
+}
+
+.gallery-buttons button{
+
+flex:1;
+padding:12px;
+border:none;
+border-radius:8px;
+background:#0b6b69;
+color:white;
+cursor:pointer;
+transition:.3s;
+
+}
+
+.gallery-buttons button:last-child{
+
+background:#d62828;
+
+}
+
+.gallery-buttons button:hover{
+
+opacity:.8;
+
+}
+
+.todo-input{
+
+display:flex;
+gap:10px;
+margin-bottom:20px;
+
+}
+
+.todo-input input{
+
+flex:1;
+padding:12px;
+border-radius:8px;
+border:1px solid #ccc;
+
+}
+
+.todo-input button{
+
+padding:12px 18px;
+background:#0b6b69;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+
+}
+
+#taskList{
+
+list-style:none;
+
+}
+
+#taskList li{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:12px;
+margin-bottom:10px;
+background:#f2f2f2;
+border-radius:8px;
+
+}
+
+#taskList button{
+
+background:red;
+color:white;
+border:none;
+padding:6px 12px;
+border-radius:5px;
+cursor:pointer;
+
+}
+
+footer{
+
+background:#0b6b69;
+color:white;
+padding:30px;
+text-align:center;
+margin-top:40px;
+
+}
+
+.icons{
+
+margin-top:15px;
+
+}
+
+.icons i{
+
+font-size:22px;
+margin:0 10px;
+cursor:pointer;
+transition:.3s;
+
+}
+
+.icons i:hover{
+
+color:#ffd43b;
+
+}
+
+@media(max-width:992px){
+
+.container{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+header{
+
+flex-direction:column;
+gap:15px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.container{
+
+grid-template-columns:1fr;
+
+}
+
+.hero h1{
+
+font-size:30px;
+
+}
+
+nav{
+
+flex-wrap:wrap;
+justify-content:center;
+
+}
+
+.gallery{
+
+grid-template-columns:1fr;
+
+}
+
+.todo-input{
+
+flex-direction:column;
+
+}
+
+.gallery-buttons{
+
+flex-direction:column;
+
+}
+
+}

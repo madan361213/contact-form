@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApexPlanet Task-2</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+
+    <h2>ApexPlanet</h2>
+
+    <nav>
+
+        <a href="#home">Home</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#todo">To-Do</a>
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+</header>
+
+<section class="hero" id="home">
+
+    <!-- <h1>Intermediate HTML, CSS & JavaScript</h1> -->
+     <h1>Welcom to my project</h1>
+
+    <!-- <p>
+        Task-2 Internship Project
+    </p> -->
+
+</section>
+
+<section class="container">
+
+<div class="card" id="contact">
+
+<h2>Contact Form</h2>
+
+<form id="contactForm">
+
+<input
+type="text"
+id="name"
+placeholder="Enter Your Name">
+
+<input
+type="email"
+id="email"
+placeholder="Enter Email">
+
+<input
+type="text"
+id="subject"
+placeholder="Subject">
+
+<textarea
+id="message"
+placeholder="Write Message"></textarea>
+
+<button type="submit">
+
+Send Message
+
+</button>
+
+<p id="formMessage"></p>
+
+</form>
+
+</div>
+
+<div class="card" id="gallery">
+
+<h2>Image Gallery</h2>
+
+<div class="gallery" id="galleryBox">
+
+<image src="images/image1.jpg">
+<image src="images/image2.jpg">
+<image src="images/image3.jpg">
+<image src="images/image4.jpg">
+<image src="images/image5.jpg">
+<image src="images/image6.jpg">
+
+</div>
+
+<div class="gallery-buttons">
+
+<button id="addImage">
+
+Add Image
+
+</button>
+
+<button id="removeImage">
+
+Remove Image
+
+</button>
+
+</div>
+
+</div>
+
+<div class="card" id="todo">
+
+<h2>To-Do List</h2>
+
+<div class="todo-input">
+
+<input
+type="text"
+id="taskInput"
+placeholder="Enter Task">
+
+<button onclick="addTask()">
+
+Add Task
+
+
+</button>
+
+</div>
+
+<ul id="taskList"></ul>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>ApexPlanet Internship</h3>
+
+<p>
+
+© 2026 ApexPlanet Internship | Created by Madan Mohan
+
+</p>
+
+<div class="icons">
+  <a href="https://www.facebook.com/share/1BLGxRmZBV/" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-facebook"></i>
+  </a>
+  
+  <a href="https://www.instagram.com/madan_mohan_shaurya_singh_000?igsh=NmQzNzY1aGM4ZzRm" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-instagram"></i>
+  </a>
+  
+  <a href="https://www.linkedin.com/in/madan-mohan-6a7556310" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-linkedin"></i>
+  </a>
+  
+  <a href="https://github.com/madan361213" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-github"></i>
+  </a>
+</div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
